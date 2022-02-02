@@ -1,0 +1,143 @@
+body{
+	background: rgb(249,114,110);
+background: linear-gradient(309deg, rgba(249,114,110,1) 0%, rgba(238,207,79,1) 100%);
+min-height: 100vh;
+}
+
+h1{
+	text-align: center;
+	font-family: 'Indie Flower', cursive;
+	color: white;
+	font-size: 70px;
+}
+
+.Todoinput{
+	outline: none;
+	border-radius: 5px 0px 0px 5px;
+	border: none;
+	padding: 8px;
+	font-size: 32px;
+}
+
+form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Todobutton{
+	border: none;
+	background: white;
+	padding: 8px;
+	border-radius: 0px 5px 5px 0px;
+	font-size: 32px;
+	color: #ff615d;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.Todobutton:hover{
+	color: white;
+	background-color: #ff615d;
+}
+
+.Todocontainer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Todolist{
+	list-style: none;
+	min-width: 30%;
+}
+
+.Tododiv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	font-size: 32px;
+	margin: 8px;
+	transition:  all 0.5s ease;
+}
+
+.Todoli{
+	flex-grow: 1;
+	padding: 0 8px;
+}
+
+.Cbutton , .Tbutton{
+	padding: 16px;
+	border: none;
+	background: white;
+    color: #ff615d;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Cbutton{
+	color: green;
+}
+
+.Tbutton:hover{
+    background-color: #ff615d;
+    color: white;
+}
+
+.Cbutton:hover{
+    background-color: green;
+    color: white;
+}
+
+.fa-trash , .fa-check{
+	pointer-events: none;
+}
+
+.fall{
+	opacity: 0;
+	transform: translateY(120px)rotateZ(20deg);
+}
+
+.complete{
+	text-decoration: line-through;
+	opacity: 0.5;
+
+}
+.select{
+	position: relative;
+}
+.todofilter{
+	appearance: none;
+	border: none;
+	outline: none;
+	margin-left: 16px;
+	border-radius: 5px;
+	padding: 17px 0;
+	padding-left: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	color: #ff615d;
+	width: 150px;
+}
+
+.select::after{
+	content: "\f0d7";
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    position: absolute;
+    background: #ff615d;
+    top:0;
+    right: 0;
+    padding: 17.5px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    border-radius: 0 5px 5px 0;
+    color: white;
+}
+
+.select:hover::after{
+	color: #ff615d;
+	background: white;
+}
